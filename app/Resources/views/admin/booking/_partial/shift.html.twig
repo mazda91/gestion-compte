@@ -22,8 +22,7 @@
                 {% endfor %}
             </div>
             <div >
-                <div style="position: absolute;width:60px;height: 60px;top: 0;left: 2px;transform: rotate(-90deg);text-align: center;font-size: 9px;">{{ bucket.start|date('G\\hi') }}
-                        &nbsp;{{ bucket.end|date('G\\hi') }}</div>
+                <div class="shift-block">{{ bucket.start|date('G\\hi') }} - {{ bucket.end|date('G\\hi') }}</div>
                 <ul style="font-size: 9px; padding-left: 20px;">
                     {% set shiftercount = 0 %}
                     {% for shift in bucket.shifts() %}
